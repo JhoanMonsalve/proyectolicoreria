@@ -41,6 +41,18 @@ document.addEventListener('DOMContentLoaded', () => {
             image: '/img/bebidas/sodamichelada.png',
             price: '$10.000',
             description: 'Soda con un toque especial, ideal para disfrutar con amigos.'
+        },
+        'electrolit': {
+            title: 'electrolit',
+            image: '/img/bebidas/electrolit.png',
+            price: '$11.000',
+            description: 'electrolit Hidratación avanzada para quienes lo dan todo! 💧⚡ Con su fórmula especializada de electrolitos y minerales.'
+        },
+        'gatorade': {
+            title: 'gatorade',
+            image: '/img/bebidas/gatorade.jpg',
+            price: '$10.000',
+            description: 'Energía líquida para llevarte al siguiente nivel! 🌟 Con su mezcla perfecta de electrolitos y sabor refrescante, Gatorade te hidrata, recupera y te impulsa a dar lo mejor de ti.'
         }
     };
 

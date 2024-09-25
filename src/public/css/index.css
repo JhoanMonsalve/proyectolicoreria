@@ -27,7 +27,8 @@ header nav {
 header h1 {
     color: #fff;
     font-weight: 600;
-    letter-spacing: -2px; 
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
 }
 
 header ul {
@@ -38,8 +39,10 @@ header ul {
 
 header ul li a {
     color: #fff;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-weight: 400;
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
 }
 
 header ul li a:hover {
@@ -140,7 +143,7 @@ button.comprar:hover {
 
 
 footer {
-    background-color: #000000;
+    background-color: #ff5a5f;
     color: #fff;
     padding: 20px;
     text-align: center;

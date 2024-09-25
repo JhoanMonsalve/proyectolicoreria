@@ -156,7 +156,7 @@ footer {
     max-width: 500px;
     position: relative;
     animation: fadeIn 0.3s ease;
-    transform: translate(18%, 13%) /*quitar para que el reponsive funcione */
+    /* transform: translate(18%, 13%) quitar para que el reponsive funcione */
 }
 
 .modal-content img {

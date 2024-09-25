@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const buttons = document.querySelectorAll(".btn-comprar");
-
-    const modal = document.getElementById("modalAguardiente");
+    const modal = document.getElementById("modal-producto");
     const modalTitle = document.getElementById("modal-title");
     const modalImage = document.getElementById("modal-image");
     const modalPrice = document.getElementById("modal-price");
@@ -43,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
             modalDescription.textContent = producto.description;
 
             
-            modal.style.display = "block";
+            modal.style.display = "flex";
         }
     }
 

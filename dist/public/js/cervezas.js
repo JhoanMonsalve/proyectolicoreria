@@ -72,12 +72,12 @@ document.addEventListener("DOMContentLoaded", function () {
             modalDescription.textContent = producto.description;
 
             
-            modal.style.display = "block";
+            modal.style.display = "flex";
         }
     }
 
     
-    buttons.forEach((button, index) => {
+    buttons.forEach((button) => {
         button.addEventListener("click", function () {
             const productoId = this.parentNode.id;
             abrirModal(productoId);

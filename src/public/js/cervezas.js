@@ -27,13 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Cerveza Heineken",
             image: "/img/cerveza/cervezaheineken.jpg",
             price: "$5.000",
-            description: "Cerveza negra premium con un sabor inconfundible."
+            description: "Cerveza refrescante premium con un sabor inconfundible."
         },
         cervezapoker: {
             title: "Cerveza Poker",
             image: "/img/cerveza/cervezapoker.jpg",
             price: "$5.000",
-            description: "Ideal para compartir entre amigos, una cerveza fuerte y deliciosa."
+            description: "Ideal para pasar un rato agradable con tus amigos, una cerveza fuerte y deliciosa."
         },
         cervezacostenita: {
             title: "Cerveza Costeñita",

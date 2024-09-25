@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "michelada-normal": {
             title: "Michelada Normal con cerveza",
             image: "/img/micheladas/micheladanormal.png",
-            price: "$15.000",
+            price: "$10.000",
             description: "Disfruta de nuestra deliciosa michelada normal con cerveza."
         },
         "michelada-varios-sabores": {
             title: "Michelada de varios sabores con cerveza",
             image: "/img/micheladas/micheladanormal.png",
-            price: "$10.000",
+            price: "$15.000",
             description: "Una refrescante michelada con una mezcla de varios sabores."
         },
         "michelada-varios-sabores-bretaña": {

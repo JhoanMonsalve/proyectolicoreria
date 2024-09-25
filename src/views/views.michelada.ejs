@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micheladas Fiesta</title>
+    <link rel="stylesheet" href="/css/michelada.css">
+</head>
+<body>
+    <header>
+        <h1>Micheladas</h1>
+        <nav>
+            <ul>
+                <li><a href="/productos">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos" class="productos">
+        <div class="producto" id="michelada-normal">
+            <img src="/img/micheladas/micheladanormal.png" alt="Michelada Normal">
+            <h3>Michelada Normal con cerveza</h3>
+            <p>$15.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        <div class="producto" id="michelada-varios-sabores">
+            <img src="/img/micheladas/micheladanormal.png" alt="Michelada de varios sabores">
+            <h3>Michelada de varios sabores con cerveza</h3>
+            <p>$10.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        <div class="producto" id="michelada-varios-sabores-bretaña">
+            <img src="/img/micheladas/micheladanormal.png" alt="Michelada de bretaña">
+            <h3>Michelada de varios sabores con bretaña</h3>
+            <p>$10.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+        
+        <div class="producto" id="michelada">
+            <img src="/img/micheladas/micheladanormal.png" alt="Michelada">
+            <h3>Michelada de varios sabores refrescante</h3>
+            <p>$10.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+        
+        
+        <div id="modal-producto" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-title"></h2>
+                <img id="modal-image" src="" alt="Imagen del Producto" style="width: 100%;">
+                <p id="modal-price"></p>
+                <p id="modal-description">Descripción detallada de la michelada aquí.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Micheladas Fiesta</p>
+    </footer>
+
+    <script src="/js/michelada.js"></script>
+</body>
+</html>

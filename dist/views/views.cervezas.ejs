@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Cervezas</title>
+    <link rel="stylesheet" href="/css/cervezas.css">
+</head>
+<body>
+    <header>
+        <h1>Menú de Cervezas</h1>
+        <nav>
+            <ul>
+                <li class="Inicio"><a href="/productos">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos" class="productos">
+
+        <div class="producto" id="cervezapilsen">
+            <img src="/img/cerveza/cervezapilsen.jpeg" alt="Cerveza Pilsen">
+            <h3>Cerveza Pilsen</h3>
+            <p>5.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        <div class="producto" id="cervezaaguila">
+            <img src="/img/cerveza/cervezaaguila.jpg" alt="Cerveza Aguila">
+            <h3>Cerveza Aguila</h3>
+            <p>$5.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        <div class="producto" id="cervezaheineken">
+            <img src="/img/cerveza/cervezaheineken.jpg" alt="Cerveza Heineken">
+            <h3>Cerveza Heineken</h3>
+            <p>$5.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        <div class="producto" id="cervezapoker">
+            <img src="/img/cerveza/cervezapoker.jpg" alt="Cerveza Poker">
+            <h3>Cerveza Poker Refrescante</h3>
+            <p>$5.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        <div class="producto" id="cervezacostenita">
+            <img src="/img/cerveza/cervezacostenita.jpeg" alt="Cerveza Costeñita">
+            <h3>Cerveza Costeñita</h3>
+            <p>$4.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        <div class="producto" id="cervezacorona">
+            <img src="/img/cerveza/cervezacorona.jpg" alt="Cerveza Corona">
+            <h3>Cerveza Corona</h3>
+            <p>$9.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        <div class="producto" id="cervezaclub-colombia">
+            <img src="/img/cerveza/cervezaclubcolombia.jpg" alt="Cerveza Club Colombia">
+            <h3>Cerveza Club Colombia</h3>
+            <p>$6.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        <div class="producto" id="cervezaaguila-light">
+            <img src="/img/cerveza/aguilalight.jpg" alt="Cerveza Aguila Light">
+            <h3>Cerveza Aguila Light</h3>
+            <p>$5.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+    </section>
+
+    
+    <div id="modal-producto" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Imagen del Producto" style="width: 100%;">
+            <p id="modal-price"></p>
+            <p id="modal-description">Descripción detallada de la cerveza aquí.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Menú de Cervezas</p>
+    </footer>
+
+    <script src="/js/cervezas.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ron Exclusivo</title>
+    <link rel="stylesheet" href="/css/ron.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ron Exclusivo</h1>
+        <nav>
+            <ul>
+                <li><a href="/productos">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos" class="productos">
+        <div class="producto" id="ron-Media">
+            <img src="/img/ron/RonMedia.jpeg" alt="Ron Media">
+            <h3>Ron Media</h3>
+            <p>$50.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        <div class="producto" id="ron-Litra">
+            <img src="/img/ron/RonLitro.jpeg" alt="Ron Litro">
+            <h3>Ron Litro</h3>
+            <p>$60.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        <div class="producto" id="ron-Botella">
+            <img src="/img/ron/RonBotella.jpeg" alt="Ron Botella">
+            <h3>Ron Botella</h3>
+            <p>$170.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        <div class="producto" id="ron-Garrafa">
+            <img src="/img/ron/rongarrafa.jpg" alt="Ron Garrafa">
+            <h3>Ron Garrafa</h3>
+            <p>$200.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        
+    </section>
+
+    
+    <div id="modal-producto" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Imagen del Producto" style="width: 100%;">
+            <p id="modal-price"></p>
+            <p id="modal-description">Descripción detallada del ron aquí.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Ron Caldas</p>
+    </footer>
+
+    <script src="/js/ron.js"></script>
+</body>
+
+</html>

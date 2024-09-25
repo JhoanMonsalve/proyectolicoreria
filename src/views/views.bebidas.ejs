@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas Refrescantes</title>
+    <link rel="stylesheet" href="/css/bebidas.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bebidas Refrescantes</h1>
+        <nav>
+            <ul>
+                <li><a href="/productos">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos" class="productos">
+        
+        <div class="producto" id="coca-cola">
+            <img src="/img/bebidas/cocacola.png" alt="Coca-Cola">
+            <h3>Coca-Cola</h3>
+            <p>$5.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        
+        <div class="producto" id="soda">
+            <img src="/img/bebidas/soda.png" alt="Soda">
+            <h3>Soda</h3>
+            <p>$4.500</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        
+        <div class="producto" id="quatro">
+            <img src="/img/bebidas/quatro.jpeg" alt="Quatro">
+            <h3>Quatro</h3>
+            <p>$100.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        
+        <div class="producto" id="redbull">
+            <img src="/img/bebidas/redbull.jpeg" alt="RedBull">
+            <h3>RedBull</h3>
+            <p>$13.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        
+        <div class="producto" id="soda-michelada">
+            <img src="/img/bebidas/sodamichelada.png" alt="Soda Michelada">
+            <h3>Soda Michelada</h3>
+            <p>$10.000</p>
+            <button class="btn-comprar">Ver Producto</button>
+        </div>
+
+        
+    </section>
+
+    
+    <div id="modal-producto" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Imagen del Producto" style="width: 100%;">
+            <p id="modal-price"></p>
+            <p id="modal-description">Descripción detallada del producto aquí.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Bebidas</p>
+    </footer>
+
+    <script src="/js/bebidas.js"></script>
+</body>
+
+</html>

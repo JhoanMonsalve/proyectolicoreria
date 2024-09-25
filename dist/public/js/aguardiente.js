@@ -13,19 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
         "aguardiente-azul": {
             title: "Aguardiente Tapa Azul",
             image: "/img/aguardiente/aguardientetapaazul.jpg",
-            price: "$70.000",
+            price: "$100.000",
             description: "Un aguardiente suave con sabor a anís y un toque dulce."
         },
         "aguardiente-rojo": {
             title: "Aguardiente Tapa Roja",
             image: "/img/aguardiente/aguardientetaparoja.png",
-            price: "$70.000",
+            price: "$100.000",
             description: "El clásico aguardiente tapa roja, conocido por su sabor fuerte."
         },
         "aguardiente-verde": {
             title: "Aguardiente Tapa Verde",
             image: "/img/aguardiente/aguardientetapaverde.jpeg",
-            price: "$70.000",
+            price: "$90.000",
             description: "Un aguardiente extra fuerte, ideal para quienes prefieren un sabor intenso."
         }
        

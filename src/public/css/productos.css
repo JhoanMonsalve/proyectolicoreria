@@ -8,12 +8,12 @@
 
 body {
     background-color: #f4f4f4;
-    color: #ff5a5f;
+    color: #000000;
 }
 
 /* Estilos del header */
 header {
-    background-color: #000000;
+    background-color: #ff5a5f;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -102,7 +102,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #000000;
+    background-color: #ff5a5f;
     color: white;
     text-align: center;
     padding: 1rem;

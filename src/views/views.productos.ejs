@@ -6,6 +6,7 @@
     <title>Licorería</title>
     <link rel="icon" href="/img/momentosgratos.jpeg" type="momentosgratos">
     <link rel="stylesheet" href="/css/productos.css">
+    <link rel="stylesheet" href="/css/modal.css"> <!-- Link al CSS de la ventana emergente -->
 </head>
 <body>
     <header>
@@ -63,13 +64,23 @@
             <img src="/img/cerveza/smirnoff.jpg" alt="smirnoff">
             <h3>Smirnoff</h3>
             <p>$16.000</p>
-            <button class="btn-comprar" onclick="window.open('/micheladas')">Ver Producto</button>
+            <button class="btn-comprar" id="ver-smirnoff">Ver Producto</button>
         </div>
     </section>
+
+    
+    <div id="modal-smirnoff" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Smirnoff</h2>
+            <p>Smirnoff con buen sabor para pasar un rato agrable, Precio: $16.000</p>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Licorera</p>
     </footer>
-    
+
+    <script src="/js/productos.js"></script>
 </body>
 </html>

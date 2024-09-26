@@ -168,10 +168,10 @@ footer {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
     z-index: 1000;
-    display: none;
+    display: none; /* Mantiene la ventana oculta inicialmente */
 }
 
 .modal-content {
@@ -182,13 +182,14 @@ footer {
     width: 80%;
     max-width: 500px;
     position: relative;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); /* Sombra para mejor visibilidad */
     animation: fadeIn 0.3s ease;
 }
 
 .img-modal {
     max-width: 100%;
     height: auto;
-    margin: 0 auto; 
+    margin: 0 auto; /* Centra la imagen horizontalmente */
     display: block; 
 }
 

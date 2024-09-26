@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
             description: "Con la Cerveza Club Colombia, cada trago es una celebración de la excelencia. Esta cerveza premium es apreciada por su sabor profundo, bien equilibrado, y su cuerpo robusto, resultado de la combinación de los mejores ingredientes y un cuidadoso proceso de elaboración."
         },
         "cervezaaguila-light": {
-            title: "Cerveza Aguila-light",
+            title: "Cerveza Aguila light",
             image: "/img/cerveza/aguilalight.jpg",
             price: "$5.000",
             description: "Para aquellos que prefieren una opción más ligera sin sacrificar el sabor, la Cerveza Águila Light es perfecta. Con menos calorías y alcohol, pero manteniendo el mismo carácter refrescante de Águila, es ideal para quienes desean disfrutar de una cerveza sin exceso."

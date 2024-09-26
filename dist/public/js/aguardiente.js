@@ -11,22 +11,22 @@ document.addEventListener("DOMContentLoaded", function () {
     // Información de productos
     const productos = {
         "aguardiente-azul": {
-            title: "Aguardiente Tapa Azul",
+            title: "Aguardiente Tapa Azul litro",
             image: "/img/aguardiente/aguardientetapaazul.jpg",
             price: "$100.000",
-            description: "Un aguardiente suave con sabor a anís y un toque dulce."
+            description: "Para quienes buscan una experiencia premium, el Aguardiente Tapa Azul es la mejor opción. Con un sabor más suave, refinado y sin azúcar añadido, este aguardiente es la elección perfecta para aquellos que prefieren un licor puro y delicado. precio por copa: $6.000"
         },
         "aguardiente-rojo": {
-            title: "Aguardiente Tapa Roja",
+            title: "Aguardiente Tapa Roja litro",
             image: "/img/aguardiente/aguardientetaparoja.png",
             price: "$100.000",
-            description: "El clásico aguardiente tapa roja, conocido por su sabor fuerte."
+            description: "El Aguardiente Tapa Roja es la elección ideal para quienes buscan una experiencia más intensa y vibrante. Con un sabor robusto y una mayor graduación alcohólica. precio por copa $6.000"
         },
         "aguardiente-verde": {
-            title: "Aguardiente Tapa Verde",
+            title: "Aguardiente Tapa Verde litro",
             image: "/img/aguardiente/aguardientetapaverde.jpeg",
             price: "$90.000",
-            description: "Un aguardiente extra fuerte, ideal para quienes prefieren un sabor intenso."
+            description: "Descubre el inconfundible sabor del Aguardiente Tapa Verde, un licor tradicional colombiano con un toque suave y fresco. Con una combinación perfecta de anís y un contenido moderado de alcohol. precio por copa $6.000"
         }
        
     };

@@ -14,25 +14,25 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Granizado 6 onzas",
             image: "/img/granizados/6onzas.jpg",
             price: "$6.000",
-            description: "Un refrescante granizado de 6 onzas."
+            description: "El Granizado de 6 Onzas es perfecto para esos momentos en los que solo necesitas un pequeño respiro refrescante. Con su tamaño compacto, es ideal para llevar contigo a cualquier lugar y disfrutar de una explosión de sabor helado en cada sorbo."
         },
         "granizado-8onzas": {
             title: "Granizado 8 onzas",
             image: "/img/granizados/8onzas.jpg",
             price: "$8.000",
-            description: "Delicioso granizado de 8 onzas, ideal para el calor."
+            description: "El Granizado de 8 Onzas ofrece un poco más de frescura y sabor, convirtiéndose en la porción ideal para quienes buscan un refrigerio refrescante de tamaño medio."
         },
         "granizado-10onzas": {
             title: "Granizado 10 onzas",
             image: "/img/granizados/10onzas.jpg",
             price: "$10.000",
-            description: "Granizado de 10 onzas, el equilibrio perfecto entre sabor y cantidad."
+            description: "Disfruta de la frescura en su máxima expresión con el Granizado de 10 Onzas. Este tamaño es perfecto para quienes quieren saborear más de la dulzura y la frescura que solo un buen granizado puede ofrecer."
         },
         "granizado-12onzas": {
             title: "Granizado 12 onzas",
             image: "/img/granizados/12onzas.jpeg",
             price: "$12.000",
-            description: "Granizado de 12 onzas, perfecto para compartir."
+            description: "El Granizado de 12 Onzas es la opción más grande para los verdaderos amantes del sabor helado. Con la porción perfecta para mantenerte fresco por más tiempo, este granizado te ofrece un torbellino de sabores que te revitaliza con cada trago."
         }
         
     };

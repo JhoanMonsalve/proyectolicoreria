@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         title: "Smirnoff",
         image: "/img/cerveza/smirnoff.jpg",
         price: "$16.000",
-        description: "Smirnoff para pasar un rato agradable. Precio: $16.000"
+        description: "El Smirnoff es el aliado perfecto para los momentos de celebración y desconexión. Con su sabor suave y equilibrado, este vodka premium es ideal para disfrutar solo, con hielo, o en tus cócteles favoritos."
     };
 
     function abrirModal() {

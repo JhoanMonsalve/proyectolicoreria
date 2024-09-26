@@ -10,34 +10,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Información de productos
     const productos = {
-        "ron-Media": {
-            title: "Ron Media",
-            image: "/img/ron/RonMedia.jpeg",
-            price: "$50.000",
-            description: "Un ron clásico de sabor suave y un cuerpo medio."
-        },
-        "ron-Litra": {
+        "ron-litro": {
             title: "Ron Litro",
+            image: "/img/ron/RonMedia.jpeg",
+            price: "$90.000",
+            description: "El Ron Litro ofrece la cantidad justa para quienes disfrutan del sabor intenso y refinado de un buen ron. Perfecto para reuniones o fiestas, este formato de mayor tamaño asegura que nunca falte una copa. precio por copa: $7.000"
+        },
+        "ron-botella": {
+            title: "Ron Botella 8 Años",
             image: "/img/ron/RonLitro.jpeg",
-            price: "$70.000",
-            description: "Ron litro premium con sabor complejo y profundo."
+            price: "$170.000",
+            description: "ron de un litro, una bebida que transforma cualquier reunión en una experiencia inolvidable. precio por copa: $7.000"
         },
-        "ron-Botella": {
-            title: "Ron Botella",
-            image: "/img/ron/RonBotella.jpeg",
-            price: "$100.000",
-            description: "Ron botella edición limitada, perfecto para coleccionistas y conocedores."
-        },
-        "ron-Garrafa": {
+        "ron-garrafa": {
             title: "Ron Garrafa",
-            image: "/img/ron/rongarrafa.jpg",
+            image: "/img/ron/RonBotella.jpeg",
             price: "$200.000",
-            description: "Ron Garrafa edición limitada, perfecto para pasar un rato agradable."
+            description: "Para las grandes celebraciones, el Ron Garrafa es la opción ideal. Este formato extra grande está pensado para compartir en eventos y fiestas donde el buen ron no puede faltar. precio por copa: $7.000"
         }
-        // Puedes agregar más productos aquí si lo necesitas
+        
     };
 
-    // Función para abrir el modal con los datos del producto
+    
     function abrirModal(productoId) {
         const producto = productos[productoId];
 

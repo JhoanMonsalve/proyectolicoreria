@@ -53,7 +53,20 @@ document.addEventListener('DOMContentLoaded', () => {
             image: '/img/bebidas/gatorade.jpg',
             price: '$10.000',
             description: 'Energía líquida para llevarte al siguiente nivel! 🌟 Con su mezcla perfecta de electrolitos y sabor refrescante, Gatorade te hidrata, recupera y te impulsa a dar lo mejor de ti.'
+        },
+        'aguacongas': {
+            title: 'aguacongas',
+            image: '/img/bebidas/aguacongas.png',
+            price: '$4.000',
+            description: 'Disfruta de la frescura inigualable del agua con gas! Perfecta para cualquier ocasión, sus burbujas finas y refrescantes revitalizan cada sorbo.'
+        },
+        'aguasingas': {
+            title: 'aguasingas',
+            image: '/img/bebidas/aguasingas.png',
+            price: '$3.000',
+            description: 'Descubre la pureza y frescura del agua sin gas! La opción perfecta para hidratarte de manera natural y saludable. Suave, ligera y sin burbujas, es ideal para disfrutar en cualquier momento del díaDisfruta de la frescura inigualable del agua con gas! Perfecta para cualquier ocasión, sus burbujas finas y refrescantes revitalizan cada sorbo.'
         }
+
     };
 
     

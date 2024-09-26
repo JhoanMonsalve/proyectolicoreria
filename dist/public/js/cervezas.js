@@ -15,49 +15,49 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Cerveza Pilsen",
             image: "/img/cerveza/cervezapilsen.jpeg",
             price: "$5.000",
-            description: "Una cerveza clásica de sabor refrescante."
+            description: "Disfruta del auténtico sabor de la Cerveza Pilsen, una de las más queridas por nosotros los colombianos. Su frescura y cuerpo ligero la convierten en la opción perfecta para acompañar cualquier ocasión, desde reuniones casuales hasta grandes celebraciones."
         },
         cervezaaguila: {
             title: "Cerveza Aguila",
             image: "/img/cerveza/cervezaaguila.jpg",
             price: "$5.000",
-            description: "Una cerveza rubia de gran sabor, perfecta para cualquier ocasión."
+            description: "La Cerveza Águila es sinónimo de celebración y alegría en nuestro pais. Con su equilibrio perfecto entre sabor y suavidad, esta cerveza ligera y refrescante es ideal para compartir con amigos en cualquier ocasión."
         },
         cervezaheineken: {
             title: "Cerveza Heineken",
             image: "/img/cerveza/cervezaheineken.jpg",
             price: "$5.000",
-            description: "Cerveza refrescante premium con un sabor inconfundible."
+            description: "La mundialmente conocida Cerveza Heineken es sinónimo de calidad premium. Con su sabor único, ligeramente amargo y un aroma fresco, esta cerveza de origen holandés es la elección perfecta para aquellos que buscan algo especial."
         },
         cervezapoker: {
             title: "Cerveza Poker",
             image: "/img/cerveza/cervezapoker.jpg",
             price: "$5.000",
-            description: "Ideal para pasar un rato agradable con tus amigos, una cerveza fuerte y deliciosa."
+            description: "La Cerveza Poker es la compañera perfecta para los momentos de amistad y diversión. Con su cuerpo suave y su sabor refrescante, esta cerveza colombiana invita a relajarse y disfrutar del presente."
         },
         cervezacostenita: {
             title: "Cerveza Costeñita",
             image: "/img/cerveza/cervezacostenita.jpeg",
             price: "$4.000",
-            description: "Cerveza costeña con un toque tropical refrescante."
+            description: "Fresca, ligera y con un toque tropical, la Cerveza Costeñita es la favorita en la costa colombiana. Su sabor suave y refrescante la convierte en la opción ideal para esos días de calor junto al mar o las fiestas en la playa."
         },
         cervezacorona: {
             title: "Cerveza Corona",
             image: "/img/cerveza/cervezacorona.jpg",
             price: "$9.000",
-            description: "La cerveza más reconocida internacionalmente, ligera y refrescante."
+            description: "La Cerveza Corona es la cerveza perfecta para disfrutar de momentos relajados y refrescantes reconocida en todo el mundo, su sabor suave, ligeramente cítrico, y su presentación característica con una rodaja de limón la convierten en la elección preferida para acompañar los días soleados y las noches tranquilas."
         },
         "cervezaclub-colombia": {
             title: "Cerveza Club Colombia",
             image: "/img/cerveza/cervezaclubcolombia.jpg",
             price: "$6.000",
-            description: "Cerveza premium con cuerpo y un sabor característico."
+            description: "Con la Cerveza Club Colombia, cada trago es una celebración de la excelencia. Esta cerveza premium es apreciada por su sabor profundo, bien equilibrado, y su cuerpo robusto, resultado de la combinación de los mejores ingredientes y un cuidadoso proceso de elaboración."
         },
         "cervezaaguila-light": {
             title: "Cerveza Aguila-light",
             image: "/img/cerveza/aguilalight.jpg",
             price: "$5.000",
-            description: "Una versión ligera de la cerveza Aguila, ideal para disfrutar sin remordimientos."
+            description: "Para aquellos que prefieren una opción más ligera sin sacrificar el sabor, la Cerveza Águila Light es perfecta. Con menos calorías y alcohol, pero manteniendo el mismo carácter refrescante de Águila, es ideal para quienes desean disfrutar de una cerveza sin exceso."
         }
     };
 

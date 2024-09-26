@@ -39,7 +39,6 @@ header ul {
 
 header ul li a {
     color: #fff;
-    /* text-decoration: none; */
     font-weight: 400;
     font-family: 'Impact', sans-serif;
     text-transform: uppercase;
@@ -75,16 +74,15 @@ header ul li a:hover {
     color: #fff;
     background-color: #ff6b6b;
     border: none;
-    border-radius: 25px; 
+    border-radius: 25px;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .cta-btn:hover {
-    background-color: #ff4c4c; 
+    background-color: #ff4c4c;
 }
-
 
 /* Productos Section */
 .productos-container {
@@ -117,7 +115,9 @@ h2 {
 
 .producto img {
     width: 100%;
+    height: auto; /* Ajuste para mantener la proporción de las imágenes */
     border-radius: 10px;
+    object-fit: contain; /* Evita que las imágenes se corten */
     margin-bottom: 15px;
 }
 
@@ -146,7 +146,7 @@ button.comprar:hover {
     background-color: #ff5a5f;
 }
 
-
+/* Footer */
 footer {
     background-color: #ff5a5f;
     color: #fff;
@@ -156,23 +156,6 @@ footer {
     width: 100%;
     bottom: 0;
     font-weight: bold;
-}
-
-footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-footer ul li a {
-    color: #fff;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-footer ul li a:hover {
-    color: #ff5a5f;
 }
 
 /* Media Queries */
@@ -206,8 +189,9 @@ footer ul li a:hover {
         font-size: 1rem;
     }
 
-    footer ul li a {
-        font-size: 1.2rem;
+    .producto img {
+        height: auto; /* Ajuste responsivo */
+        object-fit: contain; /* Asegura que las imágenes no se corten */
     }
 }
 
@@ -240,7 +224,12 @@ footer ul li a:hover {
     }
 
     .grid-productos {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
+    }
+
+    .producto img {
+        height: auto; /* Ajuste para pantallas pequeñas */
+        object-fit: contain;
     }
 }
 
@@ -253,10 +242,10 @@ footer ul li a:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
-    justify-content: center; 
-    align-items: center;     
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
-    display: none; 
+    display: none;
 }
 
 .modal-content {
@@ -274,8 +263,8 @@ footer ul li a:hover {
 .img-modal {
     max-width: 100%;
     height: auto;
-    margin: 0 auto; 
-    display: block; 
+    margin: 0 auto;
+    display: block;
 }
 
 .close {
@@ -296,5 +285,3 @@ footer ul li a:hover {
         transform: scale(1);
     }
 }
-
-

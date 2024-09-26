@@ -76,7 +76,7 @@ nav ul li a:hover {
 
 .producto img {
     width: 100%;
-    height: 280px;
+    height: auto; /* Ajuste para que las imágenes mantengan proporciones */
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -134,7 +134,13 @@ footer {
     .producto {
         width: 90%;
     }
+    
+    .producto img {
+        height: auto; /* Ajuste responsivo */
+        object-fit: contain; /* Evita que las imágenes se corten */
+    }
 }
+
 /* Estilos para el modal */
 .modal {
     position: fixed;

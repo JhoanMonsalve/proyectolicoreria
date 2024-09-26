@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +24,6 @@ header h1 {
     margin-bottom: 1rem;
     font-family: 'Impact', sans-serif;
     text-transform: uppercase;
-    /* font-weight: bold; */
 }
 
 nav ul {
@@ -77,8 +75,8 @@ nav ul li a:hover {
 
 .producto img {
     width: 100%;
-    height: 280px;
-    object-fit: cover;
+    height: auto; /* Ajusta la altura automáticamente */
+    object-fit: contain; /* Asegura que la imagen no se corte */
     border-radius: 10px;
     margin-bottom: 1rem;
 }
@@ -135,7 +133,38 @@ footer {
     .producto {
         width: 90%;
     }
+
+    .producto img {
+        height: auto; /* Permite que las imágenes mantengan proporciones */
+        object-fit: contain; /* Evita que las imágenes se corten */
+    }
 }
+
+@media (max-width: 480px) {
+    .producto {
+        width: 95%; /* Ajuste para pantallas más pequeñas */
+        padding: 1rem;
+    }
+
+    .producto img {
+        height: auto; /* Asegura que la imagen no se corte */
+        object-fit: contain; /* Mantiene toda la imagen visible */
+    }
+
+    .producto h3 {
+        font-size: 1.5rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+    .producto p {
+        font-size: 1.2rem;
+    }
+
+    .btn-comprar {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
 /* Estilos para el modal */
 .modal {
     position: fixed;
@@ -217,4 +246,3 @@ footer {
         font-size: 20px;
     }
 }
-

@@ -25,7 +25,6 @@ header h1 {
     margin-bottom: 1rem;
     font-family: 'Impact', sans-serif;
     text-transform: uppercase;
-    /* font-weight: bold; */
 }
 
 nav ul {
@@ -134,7 +133,13 @@ footer {
     .producto {
         width: 90%;
     }
+
+    .producto img {
+        height: auto; /* Ajusta la altura de la imagen al contenido */
+        object-fit: contain; /* Evita que la imagen se deforme o se corte */
+    }
 }
+
 /* Estilos para el modal */
 .modal {
     position: fixed;
@@ -184,4 +189,3 @@ footer {
         transform: scale(1);
     }
 }
-

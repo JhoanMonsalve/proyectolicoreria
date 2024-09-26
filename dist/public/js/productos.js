@@ -1,37 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const buttons = document.querySelectorAll(".btn-comprar");
+    const buttonSmirnoff = document.getElementById("ver-smirnoff");
 
-    const modal = document.getElementById("modal-producto");
-    const modalTitle = document.getElementById("modal-title");
-    const modalImage = document.getElementById("modal-image");
-    const modalPrice = document.getElementById("modal-price");
-    const modalDescription = document.getElementById("modal-description");
+    const modal = document.getElementById("modal-smirnoff");
     const closeModal = document.querySelector(".close");
 
     // Información del producto Smirnoff
     const productoSmirnoff = {
         title: "Smirnoff",
-        image: "/img/cerveza/smirnoff.jpg", // Asegúrate de que la ruta de la imagen sea correcta
-        price: "$8.000",
-        description: "Vodka de calidad superior con un sabor suave y puro, perfecto para cócteles."
+        image: "/img/cerveza/smirnoff.jpg",
+        price: "$16.000",
+        description: "Smirnoff para pasar un rato agradable. Precio: $16.000"
     };
 
     function abrirModal() {
-        // Usamos el objeto de Smirnoff directamente
-        modalTitle.textContent = productoSmirnoff.title;
-        modalImage.src = productoSmirnoff.image;
-        modalPrice.textContent = productoSmirnoff.price;
-        modalDescription.textContent = productoSmirnoff.description;
+        // Actualiza el contenido del modal
+        modal.querySelector("h2").textContent = productoSmirnoff.title;
+        modal.querySelector("img").src = productoSmirnoff.image;
+        modal.querySelector("p").textContent = productoSmirnoff.description;
 
-        modal.style.display = "flex"; // Muestra el modal
+        // Muestra el modal
+        modal.style.display = "flex";
     }
 
-    buttons.forEach((button) => {
-        button.addEventListener("click", function () {
-            // Asumimos que el botón de Smirnoff es el único en la página
-            abrirModal(); // Llama a abrirModal sin necesidad de pasar un ID
-        });
+    buttonSmirnoff.addEventListener("click", function () {
+        abrirModal(); // Llama a la función para abrir el modal
     });
 
     closeModal.addEventListener("click", function () {

@@ -195,10 +195,8 @@ footer {
 }
 
 .img-modal {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    margin-top: 10px;
-    margin-bottom: 15px;
 }
 
 

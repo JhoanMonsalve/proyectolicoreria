@@ -158,6 +158,7 @@ footer {
         padding: 0.4rem 0.8rem; 
         font-size: 0.9rem; 
     }
+
 }
 .modal {
     position: fixed;
@@ -187,7 +188,8 @@ footer {
 .img-modal {
     max-width: 100%;
     height: auto;
-
+    margin: 0 auto; 
+    display: block; 
 }
 
 .close {
@@ -208,6 +210,3 @@ footer {
         transform: scale(1);
     }
 }
-
-
-

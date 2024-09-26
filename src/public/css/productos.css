@@ -158,8 +158,9 @@ footer {
         padding: 0.4rem 0.8rem; 
         font-size: 0.9rem; 
     }
-
 }
+
+/* Estilos para el modal */
 .modal {
     position: fixed;
     top: 0;

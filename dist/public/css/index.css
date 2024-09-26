@@ -69,17 +69,22 @@ header ul li a:hover {
 }
 
 .cta-btn {
-    padding: 10px 30px;
-    background-color: #ff5a5f;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
     color: #fff;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 25px; 
+    text-align: center;
     text-decoration: none;
-    border-radius: 50px;
-    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
 .cta-btn:hover {
-    background-color: #e04a4d;
+    background-color: #ff4c4c; 
 }
+
 
 /* Productos Section */
 .productos-container {

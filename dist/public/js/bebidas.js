@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const productos = {
         'coca-cola': {
-            title: 'Coca-Cola',
+            title: 'Coca-Cola Botella',
             image: '/img/bebidas/cocacola.png',
             price: '$5.000',
-            description: 'Refresco clásico, ideal para cualquier ocasión.'
+            description: 'Refresco clásico en botella, ideal para cualquier ocasión.'
         },
         'soda': {
             title: 'Soda',

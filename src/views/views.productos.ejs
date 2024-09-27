@@ -6,7 +6,6 @@
     <title>Licorería</title>
     <link rel="icon" href="/img/momentosgratos.jpeg" type="momentosgratos">
     <link rel="stylesheet" href="/css/productos.css">
-    
 </head>
 <body>
     <header>
@@ -26,55 +25,55 @@
 
     <section id="productos" class="productos">
         <div class="producto" id="Cerveza">
-            <img src="/img/cerveza/cervezaaguila.jpg" alt="Cerveza">
+            <a href="/cervezas"><img src="/img/cerveza/cervezaaguila.jpg" alt="Cerveza"></a>
             <h3>Cerveza</h3>
             <p>$5.000</p>
-            <button class="btn-comprar" onclick="window.open('/cervezas')">Ver Producto</button>
+            <button class="cta-btn" onclick="location.href='/cervezas'">Ver Producto</button>
         </div>
 
         <div class="producto" id="Aguardiente">
-            <img src="/img/aguardiente/aguardientetapaverde.jpeg" alt="Aguardiente">
+            <a href="/aguardiente"><img src="/img/aguardiente/aguardientetapaverde.jpeg" alt="Aguardiente"></a>
             <h3>Aguardiente</h3>
             <p>$90.000</p>
-            <button class="btn-comprar" onclick="window.open('/aguardiente')">Ver Producto</button>
+            <button class="cta-btn" onclick="location.href='/aguardiente'">Ver Producto</button>
         </div>
 
         <div class="producto" id="Ron">
-            <img src="/img/ron/RonLitro.jpeg" alt="Ron">
+            <a href="/ron"><img src="/img/ron/RonLitro.jpeg" alt="Ron"></a>
             <h3>Ron</h3>
             <p>$200.000</p>
-            <button class="btn-comprar" onclick="window.open('/ron')">Ver Producto</button>
+            <button class="cta-btn" onclick="location.href='/ron'">Ver Producto</button>
         </div>
 
         <div class="producto" id="Granizados">
-            <img src="/img/granizados/12onzas.jpeg" alt="Granizados">
+            <a href="/granizados"><img src="/img/granizados/12onzas.jpeg" alt="Granizados"></a>
             <h3>Granizados</h3>
             <p>$12.000</p>
-            <button class="btn-comprar" onclick="window.open('/granizados')">Ver Producto</button>
+            <button class="cta-btn" onclick="location.href='/granizados'">Ver Producto</button>
         </div>
 
         <div class="producto" id="Michelada">
-            <img src="/img/micheladas/micheladanormal.png" alt="Michelada">
+            <a href="/micheladas"><img src="/img/micheladas/micheladanormal.png" alt="Michelada"></a>
             <h3>Michelada</h3>
             <p>$15.000</p>
-            <button class="btn-comprar" onclick="window.open('/micheladas')">Ver Producto</button>
+            <button class="cta-btn" onclick="location.href='/micheladas'">Ver Producto</button>
         </div>
 
+        <!-- Producto Smirnoff con modal -->
         <div class="producto" id="smirnoff">
             <img src="/img/cerveza/smirnoff.jpg" alt="smirnoff">
             <h3>Smirnoff</h3>
             <p>$16.000</p>
-            <button class="btn-comprar" id="ver-smirnoff">Ver Producto</button> 
+            <button class="cta-btn" id="ver-smirnoff">Ver Producto</button>
         </div>
 
         <div class="producto" id="Coca-Cola">
-            <img src="/img/bebidas/cocacola.png" alt="Coca-Cola">
+            <a href="/bebidas"><img src="/img/bebidas/cocacola.png" alt="Coca-Cola"></a>
             <h3>Bebidas</h3>
             <p>$5.000</p>
-            <button class="btn-comprar" onclick="window.open('/bebidas')">Ver Producto</button>
+            <button class="cta-btn" onclick="location.href='/bebidas'">Ver Producto</button>
         </div>
     </section>
-
 
     <div id="modal-smirnoff" class="modal">
         <div class="modal-content">
@@ -89,6 +88,6 @@
         <p>&copy;Licorera</p>
     </footer>
 
-    <script src="/js/productos.js"></script>
+    <script src="js/productos.js"></script>
 </body>
 </html>

@@ -86,18 +86,21 @@ nav ul li a:hover {
     color: #000000;
 }
 
-.btn-comprar {
-    background-color: #ff5a5f;
-    color: white;
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff6b6b;
     border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.btn-comprar:hover {
-    background-color: #ff5a5f;
+.cta-btn:hover {
+    background-color: #ff4c4c;
 }
 
 /* Footer */
@@ -165,6 +168,9 @@ footer {
     }
 
     .producto p {
+        font-size: 1rem;
+    }
+    .producto .precio {
         font-size: 1rem;
     }
 

@@ -115,9 +115,9 @@ h2 {
 
 .producto img {
     width: 100%;
-    height: auto; /* Ajuste para mantener la proporción de las imágenes */
+    height: auto;
     border-radius: 10px;
-    object-fit: contain; /* Evita que las imágenes se corten */
+    object-fit: contain; 
     margin-bottom: 15px;
 }
 

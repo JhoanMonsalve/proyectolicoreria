@@ -37,7 +37,7 @@ body::before {
 
 /* Header */
 header {
-    background-color: rgba(255, 90, 96, 0.336); /* Fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
     padding: 20px;
 }
 
@@ -173,7 +173,7 @@ button.comprar:hover {
 
 /* Footer */
 footer {
-    background-color: rgba(255, 90, 96, 0.501);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
     text-align: center;
     padding: 1rem;
@@ -181,6 +181,7 @@ footer {
     width: 100%;
     bottom: 0;
     font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* Media Queries */

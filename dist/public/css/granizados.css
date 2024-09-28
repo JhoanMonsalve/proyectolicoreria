@@ -7,13 +7,17 @@
 }
 
 body {
-    background-color: #FF00FF, #aa00ff, #8A2BE2;
-    color: #333;
+    background-color: #fff;
+    color: #000000;
+    background-image: url('/img/fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* Estilos del header */
 header {
-    background-color: #00bcd4;
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 1.5rem;
     text-align: center;
@@ -58,7 +62,7 @@ nav ul li a:hover {
 }
 
 .producto {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.14);
     border-radius: 15px;
     margin: 1rem;
     padding: 1.5rem;
@@ -91,12 +95,12 @@ nav ul li a:hover {
 
 .producto p {
     font-size: 1.4rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
 .btn-comprar {
-    background-color: #ffecb3;
+    background-color: #00eaff;
     color: #333;
     border: none;
     padding: 0.7rem 1.2rem;
@@ -107,13 +111,13 @@ nav ul li a:hover {
 }
 
 .btn-comprar:hover {
-    background-color: #ffc107;
+    background-color: #ff0000;
     transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-    background-color: #00bcd4;
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
     padding: 1rem;
@@ -121,6 +125,7 @@ footer {
     width: 100%;
     bottom: 0;
     font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* Responsivo */

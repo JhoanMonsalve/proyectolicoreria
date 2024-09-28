@@ -196,14 +196,14 @@ footer {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center;     
     z-index: 1000;
-    display: none; /* Mantiene la ventana oculta inicialmente */
+    display: none;
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #d4d4d485;
     padding: 2rem;
     border-radius: 10px;
     text-align: center;

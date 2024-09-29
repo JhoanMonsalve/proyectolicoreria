@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const buttonSmirnoff = document.getElementById("ver-smirnoff");
+    const imageSmirnoff = document.querySelector("#smirnoff img");
     const modalSmirnoff = document.getElementById("modal-smirnoff");
     const closeModal = document.querySelector(".close");
 
-    // Información del producto Smirnoff
+    
     const productoSmirnoff = {
         title: "Smirnoff",
         image: "/img/cerveza/smirnoff.jpg",
@@ -11,19 +12,21 @@ document.addEventListener('DOMContentLoaded', () => {
         description: "El Smirnoff es el aliado perfecto para los momentos de celebración y desconexión. Con su sabor suave y equilibrado, este vodka premium es ideal para disfrutar solo, con hielo, o en tus cócteles favoritos."
     };
 
-    // Función para abrir el modal de Smirnoff
+    // Función para abrir el modal
     function abrirModal() {
         modalSmirnoff.querySelector("h2").textContent = productoSmirnoff.title;
         modalSmirnoff.querySelector("img").src = productoSmirnoff.image;
         modalSmirnoff.querySelector("p").textContent = productoSmirnoff.description + " Precio: " + productoSmirnoff.price;
+        
         modalSmirnoff.style.display = "flex";
 
         // Agregar estado para la navegación hacia atrás
-        history.pushState({ modalOpen: true }, '', window.location.href);
+        history.pushState(null, '', window.location.href);
     }
 
     // Evento para abrir el modal
     buttonSmirnoff.addEventListener("click", abrirModal);
+    imageSmirnoff.addEventListener("click", abrirModal);
 
     // Cerrar el modal
     closeModal.addEventListener('click', () => {

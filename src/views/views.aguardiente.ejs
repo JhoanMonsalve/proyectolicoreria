@@ -1,65 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú de Aguardientes</title>
-    <link rel="icon" href="/img/momentosgratos.jpeg" type="momentosgratos">
-    <link rel="stylesheet" href="/css/aguardiente.css">
+    <link rel="icon" href="/img/momentosgratos.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="/css/aguardientes.css">
 </head>
-
 <body>
     <header>
-        <h1>Menú de Aguardientes</h1>
+        <h1>Aguardientes</h1>
         <nav>
             <ul>
-                <li class="Inicio"><a href="/productos">Inicio</a></li>
+                <li><a href="/productos">Inicio</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="productos" class="productos">
         <div class="producto" id="aguardiente-azul">
-            <img src="/img/aguardiente/aguardientetapaazul.jpg" alt="Aguardiente Tapa Azul">
+            <img class="img-producto" src="/img/aguardiente/aguardientetapaazul.jpg" alt="Aguardiente Tapa Azul Litro">
             <h3>Aguardiente Tapa Azul Litro</h3>
             <p>$100.000</p>
             <button class="btn-comprar">Ver Producto</button>
         </div>
 
         <div class="producto" id="aguardiente-rojo">
-            <img src="/img/aguardiente/aguardientetaparoja.png" alt="Aguardiente Tapa Roja">
+            <img class="img-producto" src="/img/aguardiente/aguardientetaparoja.png" alt="Aguardiente Tapa Roja Litro">
             <h3>Aguardiente Tapa Roja Litro</h3>
             <p>$100.000</p>
             <button class="btn-comprar">Ver Producto</button>
         </div>
 
         <div class="producto" id="aguardiente-verde">
-            <img src="/img/aguardiente/aguardientetapaverde.jpeg" alt="Aguardiente Tapa Verde">
+            <img class="img-producto" src="/img/aguardiente/aguardientetapaverde.jpeg" alt="Aguardiente Tapa Verde Litro">
             <h3>Aguardiente Tapa Verde Litro</h3>
             <p>$90.000</p>
             <button class="btn-comprar">Ver Producto</button>
         </div>
 
-
+        <div id="modal-producto" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-title"></h2>
+                <img id="modal-image" src="" alt="Imagen del Producto" style="width: 100%;">
+                <p id="modal-price"></p>
+                <p id="modal-description">Descripción detallada del aguardiente aquí.</p>
+            </div>
+        </div>
     </section>
 
-
-    <div id="modal-producto" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modal-title"></h2>
-            <img id="modal-image" src="" alt="Imagen del Producto" style="width: 100%;">
-            <p id="modal-price"></p>
-            <p id="modal-description">Descripción detallada del aguardiente aquí.</p>
-        </div>
-    </div>
-
     <footer>
-        <p>&copy;Menú de Aguardientes</p>
+        <p>&copy; Menú Aguardientes</p>
     </footer>
 
-    <script src="/js/aguardiente.js"></script>
+    <script src="/js/aguardientes.js"></script>
 </body>
-
 </html>

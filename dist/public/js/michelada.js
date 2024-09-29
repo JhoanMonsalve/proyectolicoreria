@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     const buttons = document.querySelectorAll(".btn-comprar");
+    const images = document.querySelectorAll(".producto img"); 
     const modal = document.getElementById("modal-producto");
     const modalTitle = document.getElementById("modal-title");
     const modalImage = document.getElementById("modal-image");
@@ -34,10 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
             price: "$10.000",
             description: "La Michelada Normal es la bebida refrescante por excelencia. Con su mezcla clásica de limón, sal y salsas, acompañada de hielo y tu bebida favorita, esta opción es perfecta para quienes disfrutan de lo tradicional."
         }
-       
     };
 
-  
+    // Función para abrir el modal
     function abrirModal(productoId) {
         const producto = productos[productoId];
 
@@ -47,9 +46,20 @@ document.addEventListener("DOMContentLoaded", function () {
             modalPrice.textContent = producto.price;
             modalDescription.textContent = producto.description;
 
-          
+            
+            history.pushState({ modalOpen: true }, null, `#${productoId}`);
+
+            
             modal.style.display = "flex";
         }
+    }
+
+    // Función para cerrar el modal
+    function cerrarModal() {
+        modal.style.display = "none";
+
+        
+        history.replaceState(null, null, window.location.pathname);
     }
 
     
@@ -61,15 +71,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     
-    closeModal.addEventListener("click", function () {
-        modal.style.display = "none";
+    images.forEach((image) => {
+        image.addEventListener("click", function () {
+            const productoId = this.parentNode.id;
+            abrirModal(productoId);
+        });
     });
+
+    
+    closeModal.addEventListener("click", cerrarModal);
 
     
     window.addEventListener("click", function (event) {
         if (event.target === modal) {
-            modal.style.display = "none";
+            cerrarModal();
         }
     });
 
+    // Detectar el evento de "popstate" cuando el usuario presiona "atrás" en el móvil
+    window.addEventListener("popstate", function (event) {
+        if (event.state && event.state.modalOpen) {
+            cerrarModal();
+        }
+    });
 });

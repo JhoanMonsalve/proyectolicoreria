@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     const buttons = document.querySelectorAll(".btn-comprar");
-
+    const images = document.querySelectorAll(".producto img");
     const modal = document.getElementById("modal-producto");
     const modalTitle = document.getElementById("modal-title");
     const modalImage = document.getElementById("modal-image");
@@ -21,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Cerveza Aguila",
             image: "/img/cerveza/cervezaaguila.jpg",
             price: "$5.000",
-            description: "La Cerveza Águila es sinónimo de celebración y alegría en nuestro pais. Con su equilibrio perfecto entre sabor y suavidad, esta cerveza ligera y refrescante es ideal para compartir con amigos en cualquier ocasión."
+            description: "La Cerveza Águila es sinónimo de celebración y alegría en nuestro país. Con su equilibrio perfecto entre sabor y suavidad, esta cerveza ligera y refrescante es ideal para compartir con amigos en cualquier ocasión."
         },
         cervezaheineken: {
             title: "Cerveza Heineken",
@@ -45,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Cerveza Corona",
             image: "/img/cerveza/cervezacorona.jpg",
             price: "$9.000",
-            description: "La Cerveza Corona es la cerveza perfecta para disfrutar de momentos relajados y refrescantes reconocida en todo el mundo, su sabor suave, ligeramente cítrico, y su presentación característica con una rodaja de limón la convierten en la elección preferida para acompañar los días soleados y las noches tranquilas."
+            description: "La Cerveza Corona es la cerveza perfecta para disfrutar de momentos relajados y refrescantes. Reconocida en todo el mundo, su sabor suave, ligeramente cítrico, y su presentación característica con una rodaja de limón la convierten en la elección preferida para acompañar los días soleados y las noches tranquilas."
         },
         "cervezaclub-colombia": {
             title: "Cerveza Club Colombia",
@@ -54,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
             description: "Con la Cerveza Club Colombia, cada trago es una celebración de la excelencia. Esta cerveza premium es apreciada por su sabor profundo, bien equilibrado, y su cuerpo robusto, resultado de la combinación de los mejores ingredientes y un cuidadoso proceso de elaboración."
         },
         "cervezaaguila-light": {
-            title: "Cerveza Aguila light",
+            title: "Cerveza Aguila Light",
             image: "/img/cerveza/aguilalight.jpg",
             price: "$5.000",
             description: "Para aquellos que prefieren una opción más ligera sin sacrificar el sabor, la Cerveza Águila Light es perfecta. Con menos calorías y alcohol, pero manteniendo el mismo carácter refrescante de Águila, es ideal para quienes desean disfrutar de una cerveza sin exceso."
@@ -71,7 +70,10 @@ document.addEventListener("DOMContentLoaded", function () {
             modalPrice.textContent = producto.price;
             modalDescription.textContent = producto.description;
 
-            
+            // Guardar el estado en el historial
+            history.pushState({ modalOpen: true }, null, `#${productoId}`);
+
+            // Mostrar el modal
             modal.style.display = "flex";
         }
     }
@@ -85,15 +87,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     
-    closeModal.addEventListener("click", function () {
-        modal.style.display = "none";
+    images.forEach((image) => {
+        image.addEventListener("click", function () {
+            const productoId = this.parentNode.id;
+            abrirModal(productoId);
+        });
     });
 
-   
+    // Cerrar el modal
+    closeModal.addEventListener("click", function () {
+        modal.style.display = "none";
+        history.replaceState(null, null, window.location.pathname);
+    });
+
+    
     window.addEventListener("click", function (event) {
         if (event.target === modal) {
             modal.style.display = "none";
+            history.replaceState(null, null, window.location.pathname);
         }
     });
 
+    // Detectar el evento de "popstate" cuando el usuario presiona "atrás" en el móvil
+    window.addEventListener("popstate", function (event) {
+        if (event.state && event.state.modalOpen) {
+            modal.style.display = "none";
+        }
+    });
 });

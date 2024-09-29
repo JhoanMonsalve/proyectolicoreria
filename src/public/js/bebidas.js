@@ -1,8 +1,6 @@
-
 document.addEventListener('DOMContentLoaded', () => {
-
     const botonesVerProducto = document.querySelectorAll('.btn-comprar');
- 
+    const imagenesProducto = document.querySelectorAll('.producto img');
     const modal = document.getElementById('modal-producto');
     const modalTitle = document.getElementById('modal-title');
     const modalImage = document.getElementById('modal-image');
@@ -10,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalDescription = document.getElementById('modal-description');
     const closeModal = document.querySelector('.close');
 
-    
+    // Información de los productos
     const productos = {
         'coca-cola': {
             title: 'Coca-Cola Botella',
@@ -27,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'quatro': {
             title: 'Quatro',
             image: '/img/bebidas/quatro.jpeg',
-            price: '$100.000',
-            description: 'Bebida energética que te mantendrá activo.'
+            price: '$5.000',
+            description: 'Bebida refrescante cítrica con un sabor único.'
         },
         'redbull': {
             title: 'RedBull',
@@ -36,53 +34,59 @@ document.addEventListener('DOMContentLoaded', () => {
             price: '$13.000',
             description: 'La famosa bebida energética que te da alas.'
         },
-        'soda-michelada': {
-            title: 'Soda Michelada',
-            image: '/img/bebidas/sodamichelada.png',
-            price: '$10.000',
-            description: 'Soda con un toque especial, ideal para disfrutar con amigos.'
-        },
         'electrolit': {
-            title: 'electrolit',
+            title: 'Electrolit',
             image: '/img/bebidas/electrolit.png',
             price: '$11.000',
-            description: 'electrolit Hidratación avanzada para quienes lo dan todo! 💧⚡ Con su fórmula especializada de electrolitos y minerales.'
+            description: 'Hidratación avanzada con electrolitos para recuperar energía.'
         },
         'gatorade': {
-            title: 'gatorade',
+            title: 'Gatorade',
             image: '/img/bebidas/gatorade.jpg',
             price: '$10.000',
-            description: 'Energía líquida para llevarte al siguiente nivel! 🌟 Con su mezcla perfecta de electrolitos y sabor refrescante, Gatorade te hidrata, recupera y te impulsa a dar lo mejor de ti.'
+            description: 'Energía líquida que te ayuda a seguir adelante.'
         },
         'aguacongas': {
-            title: 'aguacongas',
+            title: 'Agua con gas',
             image: '/img/bebidas/aguacongas.png',
             price: '$4.000',
-            description: 'Disfruta de la frescura inigualable del agua con gas! Perfecta para cualquier ocasión, sus burbujas finas y refrescantes revitalizan cada sorbo.'
+            description: 'Agua mineral con gas para una refrescante sensación.'
         },
         'aguasingas': {
-            title: 'aguasingas',
+            title: 'Agua sin gas',
             image: '/img/bebidas/aguasingas.png',
             price: '$3.000',
-            description: 'Descubre la pureza y frescura del agua sin gas! La opción perfecta para hidratarte de manera natural y saludable. Suave, ligera y sin burbujas, es ideal para disfrutar en cualquier momento del díaDisfruta de la frescura inigualable del agua con gas! Perfecta para cualquier ocasión, sus burbujas finas y refrescantes revitalizan cada sorbo.'
+            description: 'Agua pura sin gas, ideal para la hidratación diaria.'
         }
-
     };
 
-    
+    // Función para abrir el modal
+    function abrirModal(productoId) {
+        const productoInfo = productos[productoId];
+
+        modalTitle.textContent = productoInfo.title;
+        modalImage.src = productoInfo.image;
+        modalPrice.textContent = productoInfo.price;
+        modalDescription.textContent = productoInfo.description;
+
+        // Mostrar el modal
+        modal.style.display = 'flex';
+
+        // Agregar el evento para la navegación hacia atrás
+        history.pushState(null, '', window.location.href);
+    }
+
     botonesVerProducto.forEach(boton => {
         boton.addEventListener('click', (e) => {
-            const productoId = e.target.parentElement.id; 
-            const productoInfo = productos[productoId]; 
-            
-         
-            modalTitle.textContent = productoInfo.title;
-            modalImage.src = productoInfo.image;
-            modalPrice.textContent = productoInfo.price;
-            modalDescription.textContent = productoInfo.description;
+            const productoId = e.target.parentElement.id;
+            abrirModal(productoId);
+        });
+    });
 
-            
-            modal.style.display = 'flex';
+    imagenesProducto.forEach(imagen => {
+        imagen.addEventListener('click', (e) => {
+            const productoId = e.target.parentElement.id;
+            abrirModal(productoId);
         });
     });
 
@@ -90,10 +94,14 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'none';
     });
 
-    
     window.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.style.display = 'none';
         }
+    });
+
+    // Manejar la navegación hacia atrás
+    window.addEventListener('popstate', function () {
+        modal.style.display = 'none';
     });
 });

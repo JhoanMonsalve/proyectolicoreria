@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
             price: "$15.000",
             description: "La Michelada de Varios Sabores es una explosión de frescura y creatividad en cada sorbo. Disfruta de la mezcla de sabores frutales únicos, que complementan perfectamente la clásica combinación de limón y cerveza."
         },
-        "michelada-varios-sabores-bretaña": {
-            title: "Michelada de varios sabores con bretaña",
-            image: "/img/micheladas/micheladanormal.png",
+        "soda-michelada": {
+            title: "Soda Michelada",
+            image: "/img/micheladas/sodamichelada.png",
             price: "$10.000",
-            description: "La Michelada de Varios Sabores con Bretaña es una versión innovadora que combina la refrescante agua Bretaña con los sabores frutales que tanto amas. Esta michelada sin alcohol es perfecta para quienes desean disfrutar de una bebida fresca y deliciosa, sin la cerveza."
+            description: "Descubre la Soda Michelada, una bebida que redefine la forma de disfrutar la frescura. Esta deliciosa mezcla combina la chispa de una soda burbujeante con el clásico sabor de la michelada, creando una experiencia única que despierta tus sentidos."
         },
         "michelada": {
             title: "Michelada",

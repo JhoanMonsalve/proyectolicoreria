@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
             modalPrice.textContent = producto.price;
             modalDescription.textContent = producto.description;
 
+            // Mostrar el modal
             modal.style.display = "flex";
 
             // Agregar el evento para la navegación hacia atrás

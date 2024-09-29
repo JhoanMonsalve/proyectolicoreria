@@ -46,8 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
             modalDescription.textContent = producto.description;
 
             
-            history.pushState({ modalOpen: true }, null, `#${productoId}`);
             modal.style.display = "flex";
+
+            history.pushState(null, '', window.location.href);
         
     }
 

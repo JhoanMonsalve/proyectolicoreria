@@ -39,7 +39,13 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("click", function (event) {
         if (event.target === modal) {
             modal.style.display = "none";
+            history.pushState(null, '', window.location.href);
         }
+    });
+
+    // Manejar la navegación hacia atrás
+    window.addEventListener('popstate', function () {
+        modal.style.display = 'none';
     });
 
 });

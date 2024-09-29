@@ -34,18 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
     function abrirModal(productoId) {
         const producto = productos[productoId];
 
-        if (producto) {
             modalTitle.textContent = producto.title;
             modalImage.src = producto.image;
             modalPrice.textContent = producto.price;
             modalDescription.textContent = producto.description;
 
-            // Guardar el estado en el historial
+            
             history.pushState({ modalOpen: true }, null, `#${productoId}`);
-
-            // Mostrar el modal
             modal.style.display = "flex";
-        }
+        
     }
 
     // Función para cerrar el modal

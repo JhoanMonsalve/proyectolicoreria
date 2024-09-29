@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function abrirModal(productoId) {
         const producto = productos[productoId];
-        if (producto) {
+        
             modalTitle.textContent = producto.title;
             modalImage.src = producto.image;
             modalPrice.textContent = producto.price;
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Agregar el evento para la navegación hacia atrás
             history.pushState(null, '', window.location.href);
-        }
+        
     }
 
     

@@ -77,18 +77,17 @@ document.addEventListener("DOMContentLoaded", function () {
         
     }
 
-    
     buttons.forEach((button) => {
-        button.addEventListener("click", function () {
-            const productoId = this.parentNode.id;
+        button.addEventListener("click", (e) => {
+            const productoId = e.this.parentNode.id;
             abrirModal(productoId);
         });
     });
 
     
     images.forEach((image) => {
-        image.addEventListener("click", function () {
-            const productoId = this.parentNode.id;
+        image.addEventListener("click", (e)=> {
+            const productoId = e.this.parentNode.id;
             abrirModal(productoId);
         });
     });
@@ -96,21 +95,18 @@ document.addEventListener("DOMContentLoaded", function () {
     // Cerrar el modal
     closeModal.addEventListener("click", function () {
         modal.style.display = "none";
-        history.replaceState(null, null, window.location.pathname);
     });
 
     
-    window.addEventListener("click", function (event) {
-        if (event.target === modal) {
+    window.addEventListener("click", (e) => {
+        if (e.target === modal) {
             modal.style.display = "none";
-            history.replaceState(null, null, window.location.pathname);
         }
     });
 
-    // Detectar el evento de "popstate" cuando el usuario presiona "atrás" en el móvil
-    window.addEventListener("popstate", function (event) {
-        if (event.state && event.state.modalOpen) {
-            modal.style.display = "none";
-        }
+    // Manejar la navegación hacia atrás
+    window.addEventListener('popstate', function () {
+        modal.style.display = 'none';
     });
 });
+

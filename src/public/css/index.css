@@ -37,7 +37,7 @@ body::before {
 
 /* Header */
 header {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.177);
     padding: 20px;
 }
 
@@ -184,7 +184,7 @@ button.comprar:hover {
 
 /* Footer */
 footer {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.177);
     color: #ffffff;
     text-align: center;
     padding: 1rem;

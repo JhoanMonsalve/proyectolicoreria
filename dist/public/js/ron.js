@@ -47,15 +47,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
     buttons.forEach((button) => {
-        button.addEventListener("click", (e) => {
-            const productoId = e.this.parentNode.id;
+        button.addEventListener("click", () => {
+            const productoId = this.parentNode.id;
             abrirModal(productoId);
         });
     });
 
     
     images.forEach((image) => {
-        image.addEventListener("click", (e) => {
+        image.addEventListener("click", () => {
             const productoId = this.parentNode.id;
             abrirModal(productoId);
         });
@@ -67,9 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     
-    window.addEventListener("click", (e) => {
-        if (e.target === modal) {
-            modal.style.display = 'none';
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            cerrarModal();
         }
     });
 

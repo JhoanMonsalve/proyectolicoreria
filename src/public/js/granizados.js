@@ -52,24 +52,16 @@ document.addEventListener("DOMContentLoaded", function () {
         
     }
 
-    // Función para cerrar el modal
-    function cerrarModal() {
-        modal.style.display = "none";
-
-        
-        history.replaceState(null, null, window.location.pathname);
-    }
-
     buttons.forEach((button) => {
-        button.addEventListener("click", (e) => {
-            const productoId = e.this.parentNode.id;
+        button.addEventListener("click", () => {
+            const productoId = this.parentNode.id;
             abrirModal(productoId);
         });
     });
 
     images.forEach((image) => {
-        image.addEventListener("click", (e) => {
-            const productoId = e.this.parentNode.id;
+        image.addEventListener("click", () => {
+            const productoId = this.parentNode.id;
             abrirModal(productoId);
         });
     });
@@ -78,8 +70,8 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = 'none';
     });
 
-    window.addEventListener("click", (e) => {
-        if (e.target === modal) {
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
             modal.style.display = 'none';
         }
     });

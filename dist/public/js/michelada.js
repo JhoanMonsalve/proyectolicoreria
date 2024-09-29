@@ -52,17 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
         
     }
 
-    // Función para cerrar el modal
-    function cerrarModal() {
-        modal.style.display = "none";
-
-        
-        history.replaceState(null, null, window.location.pathname);
-    }
-
-    
     buttons.forEach((button) => {
-        button.addEventListener("click", (e) => {
+        button.addEventListener("click", () => {
             const productoId = this.parentNode.id;
             abrirModal(productoId);
         });
@@ -70,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
     images.forEach((image) => {
-        image.addEventListener("click", (e) => {
+        image.addEventListener("click", () => {
             const productoId = this.parentNode.id;
             abrirModal(productoId);
         });
@@ -82,9 +73,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     
-    window.addEventListener("click", (e) => {
-        if (e.target === modal) {
-            modal.style.display = 'none';
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            cerrarModal();
         }
     });
 

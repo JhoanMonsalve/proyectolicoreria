@@ -1,12 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".btn-comprar");
-    const images = document.querySelectorAll(".producto img"); 
-    const modal = document.getElementById("modal-producto");
-    const modalTitle = document.getElementById("modal-title");
-    const modalImage = document.getElementById("modal-image");
-    const modalPrice = document.getElementById("modal-price");
-    const modalDescription = document.getElementById("modal-description");
-    const closeModal = document.querySelector(".close");
+document.addEventListener('DOMContentLoaded', () => {
+    const botonesVerProducto = document.querySelectorAll('.btn-comprar');
+    const imagenesProducto = document.querySelectorAll('.producto img');
+    const modal = document.getElementById('modal-producto');
+    const modalTitle = document.getElementById('modal-title');
+    const modalImage = document.getElementById('modal-image');
+    const modalPrice = document.getElementById('modal-price');
+    const modalDescription = document.getElementById('modal-description');
+    const closeModal = document.querySelector('.close');
 
     // Información de productos de micheladas
     const productos = {
@@ -40,42 +40,39 @@ document.addEventListener("DOMContentLoaded", function () {
     function abrirModal(productoId) {
         const producto = productos[productoId];
 
-            modalTitle.textContent = producto.title;
-            modalImage.src = producto.image;
-            modalPrice.textContent = producto.price;
-            modalDescription.textContent = producto.description;
+        modalTitle.textContent = producto.title;
+        modalImage.src = producto.image;
+        modalPrice.textContent = producto.price;
+        modalDescription.textContent = producto.description;
 
-            
-            modal.style.display = "flex";
+        // Mostrar el modal
+        modal.style.display = 'flex';
 
-            history.pushState(null, '', window.location.href);
-        
+        // Agregar el evento para la navegación hacia atrás
+        history.pushState(null, '', window.location.href);
     }
 
-    buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-            const productoId = this.parentNode.id;
+    botonesVerProducto.forEach(boton => {
+        boton.addEventListener('click', (e) => {
+            const productoId = e.target.parentElement.id;
             abrirModal(productoId);
         });
     });
 
-    
-    images.forEach((image) => {
-        image.addEventListener("click", () => {
-            const productoId = this.parentNode.id;
+    imagenesProducto.forEach(imagen => {
+        imagen.addEventListener('click', (e) => {
+            const productoId = e.target.parentElement.id;
             abrirModal(productoId);
         });
     });
 
-    
-    closeModal.addEventListener("click", () => {
+    closeModal.addEventListener('click', () => {
         modal.style.display = 'none';
     });
 
-    
-    window.addEventListener("click", function (event) {
-        if (event.target === modal) {
-            cerrarModal();
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
         }
     });
 

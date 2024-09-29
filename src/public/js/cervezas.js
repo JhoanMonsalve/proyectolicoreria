@@ -60,48 +60,41 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    
+    // Función para abrir el modal con la información del producto
     function abrirModal(productoId) {
         const producto = productos[productoId];
 
-            modalTitle.textContent = producto.title;
-            modalImage.src = producto.image;
-            modalPrice.textContent = producto.price;
-            modalDescription.textContent = producto.description;
+        modalTitle.textContent = producto.title;
+        modalImage.src = producto.image;
+        modalPrice.textContent = producto.price;
+        modalDescription.textContent = producto.description;
 
-            modal.style.display = "flex";
-            
-            
-            history.pushState(null, '', window.location.href);
-
-        
+        modal.style.display = "flex";
+        history.pushState(null, '', window.location.href);
     }
 
     buttons.forEach((button) => {
-        button.addEventListener("click", () => {
+        button.addEventListener("click", function () {
             const productoId = this.parentNode.id;
             abrirModal(productoId);
         });
     });
 
-    
     images.forEach((image) => {
-        image.addEventListener("click", ()=> {
+        image.addEventListener("click", function () {
             const productoId = this.parentNode.id;
             abrirModal(productoId);
         });
     });
 
-    // Cerrar el modal
+    // Cerrar modal
     closeModal.addEventListener("click", function () {
         modal.style.display = "none";
     });
 
-    
     window.addEventListener("click", function (event) {
         if (event.target === modal) {
             modal.style.display = "none";
-            
         }
     });
 

@@ -1,11 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-
+document.addEventListener('DOMContentLoaded', () => {
     const buttonSmirnoff = document.getElementById("ver-smirnoff");
-    const imageSmirnoff = document.querySelector("#smirnoff img");
-
-    const modal = document.getElementById("modal-smirnoff");
+    const modalSmirnoff = document.getElementById("modal-smirnoff");
     const closeModal = document.querySelector(".close");
 
+    // Información del producto Smirnoff
     const productoSmirnoff = {
         title: "Smirnoff",
         image: "/img/cerveza/smirnoff.jpg",
@@ -13,39 +11,35 @@ document.addEventListener("DOMContentLoaded", function () {
         description: "El Smirnoff es el aliado perfecto para los momentos de celebración y desconexión. Con su sabor suave y equilibrado, este vodka premium es ideal para disfrutar solo, con hielo, o en tus cócteles favoritos."
     };
 
+    // Función para abrir el modal de Smirnoff
     function abrirModal() {
-        modal.querySelector("h2").textContent = productoSmirnoff.title;
-        modal.querySelector("img").src = productoSmirnoff.image;
-        modal.querySelector("p").textContent = productoSmirnoff.description;
-        modal.style.display = "flex";
+        modalSmirnoff.querySelector("h2").textContent = productoSmirnoff.title;
+        modalSmirnoff.querySelector("img").src = productoSmirnoff.image;
+        modalSmirnoff.querySelector("p").textContent = productoSmirnoff.description + " Precio: " + productoSmirnoff.price;
+        modalSmirnoff.style.display = "flex";
+
+        // Agregar estado para la navegación hacia atrás
+        history.pushState({ modalOpen: true }, '', window.location.href);
     }
 
-    
-    buttonSmirnoff.addEventListener("click", function () {
-        abrirModal();
+    // Evento para abrir el modal
+    buttonSmirnoff.addEventListener("click", abrirModal);
+
+    // Cerrar el modal
+    closeModal.addEventListener('click', () => {
+        modalSmirnoff.style.display = 'none';
     });
 
-    
-    imageSmirnoff.addEventListener("click", function () {
-        abrirModal();
-    });
-
-    
-    closeModal.addEventListener("click", function () {
-        modal.style.display = "none";
-    });
-
-    
-    window.addEventListener("click", function (event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-            history.pushState(null, '', window.location.href);
+    window.addEventListener('click', (e) => {
+        if (e.target === modalSmirnoff) {
+            modalSmirnoff.style.display = 'none';
         }
     });
 
     // Manejar la navegación hacia atrás
-    window.addEventListener('popstate', function () {
-        modal.style.display = 'none';
+    window.addEventListener('popstate', function (event) {
+        if (event.state && event.state.modalOpen) {
+            modalSmirnoff.style.display = 'none'; // Cerrar el modal si está abierto
+        }
     });
-
 });

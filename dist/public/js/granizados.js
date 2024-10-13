@@ -12,27 +12,27 @@ document.addEventListener("DOMContentLoaded", function () {
     const productos = {
         "granizado-6onzas": {
             title: "Granizado 6 onzas",
-            image: "/img/granizados/6onzas.jpg",
-            price: "$6.000",
-            description: "El Granizado de 6 Onzas es perfecto para esos momentos en los que solo necesitas un pequeño respiro refrescante. Con su tamaño compacto, es ideal para llevar contigo a cualquier lugar y disfrutar de una explosión de sabor helado en cada sorbo."
+            image: "/img/granizados/granizado.jpg",
+            price: "$6.000 SABORES:",
+            description: "Cereza Whisky, Tusi, Maracuyar, Mora Azul, Bom bom bum y (Combinado)."
         },
         "granizado-8onzas": {
             title: "Granizado 8 onzas",
-            image: "/img/granizados/8onzas.jpg",
+            image: "/img/granizados/granizado.jpg",
             price: "$8.000",
-            description: "El Granizado de 8 Onzas ofrece un poco más de frescura y sabor, convirtiéndose en la porción ideal para quienes buscan un refrigerio refrescante de tamaño medio."
+            description: "Cereza Whisky, Tusi, Maracuyar, Mora Azul, Bom bom bum y (Combinado)."
         },
         "granizado-10onzas": {
             title: "Granizado 10 onzas",
-            image: "/img/granizados/10onzas.jpg",
+            image: "/img/granizados/granizado.jpg",
             price: "$10.000",
-            description: "Disfruta de la frescura en su máxima expresión con el Granizado de 10 Onzas. Este tamaño es perfecto para quienes quieren saborear más de la dulzura y la frescura que solo un buen granizado puede ofrecer."
+            description: "Cereza Whisky, Tusi, Maracuyar, Mora Azul, Bom bom bum y (Combinado)."
         },
         "granizado-12onzas": {
             title: "Granizado 12 onzas",
-            image: "/img/granizados/12onzas.jpeg",
+            image: "/img/granizados/granizado.jpg",
             price: "$12.000",
-            description: "El Granizado de 12 Onzas es la opción más grande para los verdaderos amantes del sabor helado. Con la porción perfecta para mantenerte fresco por más tiempo, este granizado te ofrece un torbellino de sabores que te revitaliza con cada trago."
+            description: "Cereza Whisky, Tusi, Maracuyar, Mora Azul, Bom bom bum y (Combinado)."
         }
     };
 

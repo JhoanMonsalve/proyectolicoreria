@@ -23,9 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "La Michelada de Varios Sabores es una explosión de frescura y creatividad en cada sorbo. Disfruta de la mezcla de sabores frutales únicos, que complementan perfectamente la clásica combinación de limón y cerveza."
         },
         "soda-michelada": {
-            title: "Soda Michelada",
+            title: "Michelada de varios sabores con soda",
             image: "/img/micheladas/sodamichelada.png",
-            price: "$10.000",
+            price: "$15.000",
             description: "Descubre la Soda Michelada, una bebida que redefine la forma de disfrutar la frescura. Esta deliciosa mezcla combina la chispa de una soda burbujeante con el clásico sabor de la michelada, creando una experiencia única que despierta tus sentidos."
         },
         "michelada": {

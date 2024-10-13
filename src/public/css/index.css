@@ -65,9 +65,11 @@ header ul li a {
     font-weight: 400;
     font-family: 'Impact', sans-serif;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 header ul li a:hover {
+    font-size:150%;
     text-decoration: underline;
 }
 
@@ -137,13 +139,13 @@ h2 {
 }
 
 .producto:hover {
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-5px) scale(1.09);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .producto:hover h3, .producto:hover p {
     animation: separateJoin 0.5s forwards;
-    letter-spacing: 5px; /* Aplicamos la separación de letras */
+    letter-spacing: 10px; /* Aplicamos la separación de letras */
 }
 
 /* Efecto de escala suave en las imágenes */

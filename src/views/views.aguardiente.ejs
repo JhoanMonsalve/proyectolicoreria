@@ -17,7 +17,9 @@
         </nav>
     </header>
 
-    <section id="productos" class="productos">
+    <!-- Sección para aguardientes de litro -->
+    <section id="productos-litro" class="productos">
+        <h2 class="titulo-principal">Litro Aguardiente</h2>
         <div class="producto" id="aguardiente-azul">
             <img class="img-producto" src="/img/aguardiente/aguardientetapaazul.jpg" alt="Aguardiente Tapa Azul Litro">
             <h3>Aguardiente Tapa Azul Litro</h3>
@@ -38,38 +40,44 @@
             <p>$100.000</p>
             <button class="btn-comprar">Ver Producto</button>
         </div>
+    </section>
 
-        <div class="producto" id="aguardiente-verde">
-            <img class="img-producto" src="/img/aguardiente/aguardientetapaverde.jpeg" alt="Aguardiente Tapa Verde Litro">
-            <h3>Aguardiente Tapa Verde Media</h3>
+    <!-- Sección para aguardientes de media -->
+    <section id="productos-media" class="productos">
+        <h2 class="titulo-principal">Media Aguardiente</h2>
+        <div class="producto" id="aguardiente-azul-media">
+            <img class="img-producto" src="/img/aguardiente/aguardientemediaazul.png" alt="Aguardiente Tapa Azul Media">
+            <h3>Aguardiente Tapa Azul Media</h3>
             <p>$60.000</p>
             <button class="btn-comprar">Ver Producto</button>
         </div>
 
-        <div class="producto" id="aguardiente-verde">
-            <img class="img-producto" src="/img/aguardiente/aguardientetapaverde.jpeg" alt="Aguardiente Tapa Verde Litro">
-            <h3>Aguardiente Tapa Verde Media</h3>
+        
+        <div class="producto" id="aguardiente-rojo-media">
+            <img class="img-producto" src="/img/aguardiente/aguardientemediaroja.png" alt="Aguardiente Tapa Roja Media">
+            <h3>Aguardiente Tapa Roja Media</h3>
             <p>$60.000</p>
             <button class="btn-comprar">Ver Producto</button>
         </div>
-
-        <div class="producto" id="aguardiente-verde">
-            <img class="img-producto" src="/img/aguardiente/aguardientetapaverde.jpeg" alt="Aguardiente Tapa Verde Litro">
+        
+        <div class="producto" id="aguardiente-verde-media">
+            <img class="img-producto" src="/img/aguardiente/aguardientemediaverde.png" alt="Aguardiente Tapa Verde Media">
             <h3>Aguardiente Tapa Verde Media</h3>
             <p>$60.000</p>
             <button class="btn-comprar">Ver Producto</button>
-        </div>
-
-        <div id="modal-producto" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2 id="modal-title"></h2>
-                <img id="modal-image" src="" alt="Imagen del Producto" style="width: 100%;">
-                <p id="modal-price"></p>
-                <p id="modal-description">Descripción detallada del aguardiente aquí.</p>
-            </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div id="modal-producto" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Imagen del Producto">
+            <p id="modal-price"></p>
+            <p id="modal-description"></p>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; Menú Aguardientes</p>

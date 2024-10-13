@@ -14,19 +14,19 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Aguardiente Tapa Azul Litro",
             image: "/img/aguardiente/aguardientetapaazul.jpg",
             price: "$100.000",
-            description: "Para quienes buscan una experiencia premium, el Aguardiente Tapa Azul es la mejor opción. Con un sabor más suave, refinado y sin azúcar añadido, este aguardiente es la elección perfecta para aquellos que prefieren un licor puro y delicado. Precio por copa: $6.000."
+            description: "Para quienes buscan una experiencia premium, el Aguardiente Tapa Azul es la mejor opción. Con un sabor más suave, refinado y sin azúcar añadido, este aguardiente es la elección perfecta para aquellos que prefieren un licor puro y delicado. Precio por copa: $6.000. doble: 12.000."
         },
         "aguardiente-rojo": {
             title: "Aguardiente Tapa Roja Litro",
             image: "/img/aguardiente/aguardientetaparoja.png",
             price: "$100.000",
-            description: "El Aguardiente Tapa Roja es la elección ideal para quienes buscan una experiencia más intensa y vibrante. Con un sabor robusto y una mayor graduación alcohólica. Precio por copa: $6.000."
+            description: "El Aguardiente Tapa Roja es la elección ideal para quienes buscan una experiencia más intensa y vibrante. Con un sabor robusto y una mayor graduación alcohólica. Precio por copa: $6.000: doble: 12.000"
         },
         "aguardiente-verde": {
             title: "Aguardiente Tapa Verde Litro",
             image: "/img/aguardiente/aguardientetapaverde.jpeg",
             price: "$90.000",
-            description: "Descubre el inconfundible sabor del Aguardiente Tapa Verde, un licor tradicional colombiano con un toque suave y fresco. Con una combinación perfecta de anís y un contenido moderado de alcohol. Precio por copa: $6.000."
+            description: "Descubre el inconfundible sabor del Aguardiente Tapa Verde, un licor tradicional colombiano con un toque suave y fresco. Con una combinación perfecta de anís y un contenido moderado de alcohol. Precio por copa: $6.000: doble: 12.000"
         }
     };
 

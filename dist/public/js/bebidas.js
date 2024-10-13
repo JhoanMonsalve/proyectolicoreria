@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'electrolit': {
             title: 'Electrolit',
             image: '/img/bebidas/electrolit.png',
-            price: '$11.000',
+            price: '$14.000',
             description: 'Hidratación avanzada con electrolitos para recuperar energía.'
         },
         'gatorade': {
@@ -49,13 +49,13 @@ document.addEventListener('DOMContentLoaded', () => {
         'aguacongas': {
             title: 'Agua con gas',
             image: '/img/bebidas/aguacongas.png',
-            price: '$4.000',
+            price: '$5.000',
             description: 'Agua mineral con gas para una refrescante sensación.'
         },
         'aguasingas': {
             title: 'Agua sin gas',
             image: '/img/bebidas/aguasingas.png',
-            price: '$3.000',
+            price: '$3.500',
             description: 'Agua pura sin gas, ideal para la hidratación diaria.'
         }
     };

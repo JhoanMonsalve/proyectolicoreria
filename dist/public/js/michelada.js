@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const productos = {
         "michelada-normal": {
             title: "Michelada Normal con cerveza",
-            image: "/img/micheladas/micheladanormal.png",
+            image: "/img/micheladas/michelada.jpg",
             price: "$10.000",
             description: "La Michelada Normal con Cerveza es la combinación perfecta de frescura y sabor. Con el equilibrio justo entre cerveza fría, limón, sal y un toque de salsa, esta bebida es ideal para refrescarte en cualquier ocasión."
         },
         "michelada-varios-sabores": {
             title: "Michelada de varios sabores con cerveza",
-            image: "/img/micheladas/micheladanormal.png",
+            image: "/img/micheladas/michelada.jpg",
             price: "$15.000",
             description: "La Michelada de Varios Sabores es una explosión de frescura y creatividad en cada sorbo. Disfruta de la mezcla de sabores frutales únicos, que complementan perfectamente la clásica combinación de limón y cerveza."
         },

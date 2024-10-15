@@ -86,7 +86,7 @@ nav ul li a:hover {
 
 
 .producto:hover img {
-    transform: scale(1.3); /* Aumenta el tamaño de la imagen */
+    transform: scale(1.0); /* Aumenta el tamaño de la imagen */
 }
 
 .producto h3 {

@@ -10,29 +10,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Información de productos de micheladas
     const productos = {
-        "michelada-normal": {
-            title: "Michelada Normal con cerveza",
-            image: "/img/micheladas/michelada.jpg",
-            price: "$10.000",
-            description: "La Michelada Normal con Cerveza es la combinación perfecta de frescura y sabor. Con el equilibrio justo entre cerveza fría, limón, sal y un toque de salsa, esta bebida es ideal para refrescarte en cualquier ocasión."
-        },
         "michelada-varios-sabores": {
-            title: "Michelada de varios sabores con cerveza",
-            image: "/img/micheladas/michelada.jpg",
+            title: "Michelada saborizada con cerveza",
+            image: "/img/micheladas/micheladacerveza.jpg",
             price: "$15.000",
-            description: "La Michelada de Varios Sabores es una explosión de frescura y creatividad en cada sorbo. Disfruta de la mezcla de sabores frutales únicos, que complementan perfectamente la clásica combinación de limón y cerveza."
+            description: "SABORES: precio: $15.000."
         },
-        "soda-michelada": {
-            title: "Michelada de varios sabores con soda",
-            image: "/img/micheladas/sodamichelada.png",
+        "soda-micheladasaborizada": {
+            title: "Michelada saborizada con soda",
+            image: "/img/micheladas/micheladasoda2.jpg",
             price: "$15.000",
-            description: "Descubre la Soda Michelada, una bebida que redefine la forma de disfrutar la frescura. Esta deliciosa mezcla combina la chispa de una soda burbujeante con el clásico sabor de la michelada, creando una experiencia única que despierta tus sentidos."
+            description: "SABORES: precio: $15.000."
         },
-        "michelada": {
-            title: "Michelada",
-            image: "/img/micheladas/micheladanormal.png",
-            price: "$10.000",
-            description: "La Michelada Normal es la bebida refrescante por excelencia. Con su mezcla clásica de limón, sal y salsas, acompañada de hielo y tu bebida favorita, esta opción es perfecta para quienes disfrutan de lo tradicional."
+        "michelada-soda": {
+            title: "michelada sencilla de soda",
+            image: "/img/micheladas/micheladasoda.jpg",
+            price: "$6.000",
+            description: "SABORES: Precio: $10.000."
+        },
+        "michelada-quatro": {
+            title: "Michelada sencilla con quatro",
+            image: "/img/micheladas/",
+            price: "$7.000",
+            description: "SABORES: Precio: $10.000."
         }
     };
 

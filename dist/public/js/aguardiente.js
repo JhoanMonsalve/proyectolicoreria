@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () { 
     const buttons = document.querySelectorAll(".btn-comprar");
     const images = document.querySelectorAll(".img-producto");
     const modal = document.getElementById("modal-producto");
@@ -48,23 +48,32 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    
     function abrirModal(productoId) {
         const producto = productos[productoId];
         
-        
+        // Actualizar contenido del modal
         modalTitle.textContent = producto.title;
         modalImage.src = producto.image;
         modalPrice.textContent = producto.price;
         modalDescription.textContent = producto.description;
 
-        
+        // Mostrar el modal
         modal.style.display = "flex";
 
-        (null, '', window.location.href);
+        // Guardar el estado en el historial
+        history.pushState({ productoId }, '', `#${productoId}`);
     }
 
-    
+    // Función para cerrar el modal
+    function cerrarModal() {
+        modal.style.display = "none";
+        
+        // Quitar el hash de la URL
+        if (window.location.hash) {
+            history.pushState(null, '', window.location.pathname);
+        }
+    }
+
     buttons.forEach((button) => {
         button.addEventListener("click", function () {
             const productoId = this.parentNode.id;
@@ -72,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    
     images.forEach((image) => {
         image.addEventListener("click", function () {
             const productoId = this.parentNode.id;
@@ -80,20 +88,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-     
-    closeModal.addEventListener("click", function () {
-        modal.style.display = "none";
-    });
+    closeModal.addEventListener("click", cerrarModal);
 
-    
     window.addEventListener("click", function (event) {
         if (event.target === modal) {
-            modal.style.display = "none";
+            cerrarModal();
         }
     });
 
-    
-    window.addEventListener("popstate", function () {
-        modal.style.display = "none";
+    // Manejar la navegación hacia atrás
+    window.addEventListener("popstate", function (event) {
+        if (event.state && event.state.productoId) {
+            abrirModal(event.state.productoId);
+        } else {
+            cerrarModal();
+        }
     });
 });

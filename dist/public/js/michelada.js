@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "michelada sencilla de soda",
             image: "/img/micheladas/micheladasoda.jpg",
             price: "$6.000",
-            description: "SABORES: Precio: $10.000."
+            description: "SABORES: Precio: $6.000."
         },
         "michelada-quatro": {
             title: "Michelada sencilla con quatro",
             image: "/img/micheladas/",
             price: "$7.000",
-            description: "SABORES: Precio: $10.000."
+            description: "SABORES: Precio: $7.000."
         }
     };
 

@@ -184,7 +184,7 @@ footer {
 }
 
 .modal-content img {
-    max-width: 100%;
+    max-width: 150px;
     height: auto;
     border-radius: 8px;
     margin-bottom: 1rem;

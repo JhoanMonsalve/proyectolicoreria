@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         "soda-micheladasaborizada": {
             title: "Michelada saborizada con soda",
-            image: "/img/micheladas/micheladasoda2.jpg",
+            image: "/img/micheladas/micheladasoda3.jpg",
             price: "$15.000",
             description: "SABORES: precio: $15.000."
         },
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         "michelada-quatro": {
             title: "Michelada sencilla con quatro",
-            image: "/img/micheladas/",
+            image: "/img/micheladas/micheladasoda.jpg",
             price: "$7.000",
             description: "SABORES: Precio: $7.000."
         }

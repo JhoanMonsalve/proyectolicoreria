@@ -69,15 +69,36 @@ nav ul li a:hover {
     width: 300px;
     transition: transform 0.3s ease;
 }
+.producto2 {
+    background-color: rgba(255, 255, 255, 0.123); /* Fondo semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
 
 .producto:hover {
     transform: scale(1.05);
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgb(255, 0, 0);
 }
+.producto2:hover {
+    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgb(255, 0, 0);
+}
 
 .producto img {
-    width: 100%;
+    width: 90px;
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out; 
+}
+.producto2 img {
+    width: 160px;
     height: auto; 
     object-fit: cover; 
     border-radius: 5px;
@@ -88,14 +109,26 @@ nav ul li a:hover {
 .producto:hover img {
     transform: scale(1.0); /* Aumenta el tamaño de la imagen */
 }
+.producto2:hover img {
+    transform: scale(1.0);
+}
 
 .producto h3 {
     margin: 1rem 0;
     font-size: 1.5rem;
     color: #ffffff;
 }
+.producto2 h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
 
 .producto p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.producto2 p {
     font-size: 1.2rem;
     color: #ffffff;
 }
@@ -148,10 +181,17 @@ footer {
     .producto {
         width: 90%;
     }
+    .producto2 {
+        width: 90%;
+    }
 
     .producto img {
         height: auto; 
         object-fit: contain; 
+    }
+    .producto2 img {
+        height: auto; 
+        object-fit: contain;
     }
 }
 
@@ -172,10 +212,16 @@ footer {
     .producto {
         padding: 1rem;
     }
+    .producto2 {
+        padding: 1rem;
+    }
 
     .producto img {
         height: auto; 
         object-fit: contain; 
+    }
+    .producto2 h3 {
+        font-size: 1.3rem;
     }
 
     .producto h3 {
@@ -185,8 +231,14 @@ footer {
     .producto p {
         font-size: 1rem;
     }
+    .producto2 p {
+        font-size:  1rem;
+    }
     .producto .precio {
         font-size: 1rem;
+    }
+    .producto2 .precio {
+        font-size:  1rem;
     }
 
     .btn-comprar {

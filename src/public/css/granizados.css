@@ -74,11 +74,11 @@ nav ul li a:hover {
 
 .producto:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgb(0, 225, 255);
+    box-shadow: 0 8px 20px #ff0000;
 }
 
 .producto img {
-    width: 100%;
+    width: 110px;
     height: auto;
     object-fit: contain;
     border-radius: 10px;
@@ -92,7 +92,7 @@ nav ul li a:hover {
 
 .producto h3 {
     margin: 0.5rem 0;
-    color: #009688;
+    color: #ffffff;
     font-size: 1.8rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -105,8 +105,8 @@ nav ul li a:hover {
 }
 
 .btn-comprar {
-    background-color: #00eaff;
-    color: #333;
+    background-color: #ff0000;
+    color: #ffffff;
     border: none;
     padding: 0.7rem 1.2rem;
     font-size: 1.1rem;
@@ -116,7 +116,7 @@ nav ul li a:hover {
 }
 
 .btn-comprar:hover {
-    background-color: #ff0000;
+    background-color: #840404;
     transform: scale(1.05);
 }
 
